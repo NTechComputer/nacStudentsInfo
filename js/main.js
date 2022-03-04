@@ -1,3 +1,18 @@
+// update script
+{
+    let now = new Date().getTime();
+    if(localStorage.lastUpadate){
+        if(now - Number(localStorage.lastUpadate) > 10000){
+            localStorage.lastUpadate = now;
+            console.log("updated");
+            window.location.reload();
+        }
+    }
+    else{
+        localStorage.lastUpadate = now;
+    }
+}
+
 {
     function openMenu(){
         document.querySelector(".nav").style.display = "inline";
