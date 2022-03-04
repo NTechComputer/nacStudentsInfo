@@ -87,8 +87,8 @@
         document.getElementById("rollNo").value = "";
         document.getElementById("regNo").value = "";
         document.getElementById("mobileNo").value = "";
-        document.getElementById("nickName").focus();
-        document.querySelector(".btnDiv").style.display = "inline";
+        //document.getElementById("nickName").focus();
+        document.querySelector(".btnDiv").style.display = "flex";
     }
 
     function seeInfo(className){
@@ -212,7 +212,7 @@
                 if(response.result == "success"){
                     success.style.display = "flex";
                     document.querySelector(".table").innerHTML = "";
-                    document.querySelector(".btn").style.display = "none";
+                    document.querySelector(".btnDiv").style.display = "none";
                     delete localStorage.nacStuInfo;
                 }
                 else{
