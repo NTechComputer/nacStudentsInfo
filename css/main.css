@@ -322,7 +322,7 @@ margin-left: 3px;
 
 
 ::-webkit-scrollbar {
-width: 5px;
+width: 3px;
 }
 
 ::-webkit-scrollbar-track {
@@ -335,4 +335,11 @@ background: #1565C0;
 
 ::-webkit-scrollbar-thumb:hover {
 background: deepskyblue; 
+}
+
+footer{
+text-align: center;
+font-size: 10px;
+margin: 20px auto;
+color:  #ccc;
 }

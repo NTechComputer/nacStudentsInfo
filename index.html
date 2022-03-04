@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAC Students Info</title>
     <meta name="theme-color" content="#fcfcfc">
+    <meta name="theme-color" content="#1a73e8">
     <link rel="stylesheet" id="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="icon.png" type="image/png">
     <link rel="manifest" href="manifest.webmanifest">
@@ -26,7 +27,7 @@
         </div>
         <div class="menuItems">
             <div onclick="addInfoEnable()">Add Student's Data</div>
-            <div onclick="seeInfoEnable()">See Student's Data</div>
+            <div onclick="seeData()">See Student's Data</div>
         </div>
     </nav>
 
@@ -66,38 +67,19 @@
             </div>
         </form>
     </main>
-    <main id="seeContainer">
-        <h1>See Student's Information</h1>
-        <select style="width: 332px;" onchange="seeInfo(this.value)" id="className2">
-            <option value="six">Six</option>
-            <option value="seven">Seven</option>
-            <option value="eight">Eight</option>
-            <option value="nine-g">Nine-G</option>
-            <option value="nine-s">Nine-S</option>
-            <option value="ten-g">Ten-G</option>
-            <option value="ten-s">Ten-S</option>
-        </select>
-    </main>
     <div class="table-container">
         <div class="table"> 
 
         </div>
     </div>
-    <div style="margin: 20px auto; width: 100%; display: flex; justify-content: center;">
-        <div class="error">
-            <div style="width: 100%; text-align: left;">Error! Please try again.</div>
-            <svg onclick="closeErr()" aria-hidden="true" style="fill: rgb(207, 34, 46); cursor: pointer" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
-                <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
-            </svg>
-        </div>
-        <div class="success">
-            <div style="width: 100%; text-align: left;">Successfully submitted!</div>
-            <svg onclick="closeSucc()" aria-hidden="true" style="fill: rgb(34, 207, 92); cursor: pointer" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
-                <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
-            </svg>
-        </div>
+    <div class="error">
+        <div style="width: 100%; text-align: left;">Error! Please try again.</div>
+        <svg onclick="closeErr()" aria-hidden="true" style="fill: rgb(207, 34, 46); cursor: pointer" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
+            <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
+        </svg>
     </div>
     <button onclick="submitData(this)" class="btn">Submit</button>
+    <footer>Developed & Maintained by NTech Computer.</footer>
     <script src="js/main.js"></script>
 </body>
 </html>
