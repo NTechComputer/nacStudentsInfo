@@ -169,9 +169,15 @@ button{
 
 .btn {
     width: 150px;
-    float: right;
-    margin: 20px;
-    display: none;
+    margin: 0;
+}
+
+.btnDiv{
+   margin: 0 20px;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: center;
 }
 
 .addBtn{
@@ -342,4 +348,5 @@ text-align: center;
 font-size: 10px;
 margin: 20px auto;
 color:  #ccc;
+width: 100%;
 }

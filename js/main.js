@@ -29,7 +29,7 @@
             for(let i = 0; i < data.info.length; i++){
                 createInfoTable(data.info[i])
             }
-            document.querySelector(".btn").style.display = "inline";
+            document.querySelector(".btnDiv").style.display = "flex";
         }
         closeMenu()
     }
@@ -38,7 +38,7 @@
         document.getElementById("addContainer").style.display = "none";
         document.getElementById("seeContainer").style.display = "block";
         document.querySelector(".table").innerHTML = "";
-        document.querySelector(".btn").style.display = "none";
+        document.querySelector(".btnDiv").style.display = "none";
         document.querySelector(".error").style.display = "none";
         document.querySelector(".success").style.display = "none";
         closeMenu();
@@ -73,11 +73,12 @@
         document.getElementById("regNo").value = "";
         document.getElementById("mobileNo").value = "";
         document.getElementById("nickName").focus();
-        document.querySelector(".btn").style.display = "inline";
+        document.querySelector(".btnDiv").style.display = "inline";
     }
 
     function seeInfo(className){
         document.getElementById("seeContainer").style.display = "none";
+        document.getElementById("footer").style.display = "none";
         document.querySelector(".table").innerHTML = "";
         document.querySelector("#loading").style.display = "block";
         let sheetId = "1LvojQGu-84XINlaY8xDO2HoaqXizzoEe6Mx39WbMoQI";
@@ -99,6 +100,7 @@
             }
 
         document.getElementById("seeContainer").style.display = "block";
+        document.getElementById("footer").style.display = "block";
         document.querySelector("#loading").style.display = "none";
         }).catch(err => console.log(err))
     }
